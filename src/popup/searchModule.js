@@ -174,14 +174,14 @@ export function addThumbnailsToDOM(resultArray) {
     });
 
     const bookmarkIcon = document.createElement('i');
-    bookmarkIcon.classList.add('material-icons');
+    bookmarkIcon.classList.add('fa');
+    bookmarkIcon.classList.add('fa-bookmark-o');
     bookmarkIcon.classList.add('bookmark-icon');
     bookmarkIcon.id = 'settings-icon';
     bookmarkIcon.title = 'Bookmark image';
-    bookmarkIcon.innerText = 'bookmark_border';
     bookmarkIcon.setAttribute('data-imageid', id);
     bookmarkIcon.addEventListener('click', bookmarkImage);
-
+    //
     spanLicenseElement.appendChild(licenseLinkElement);
     spanLicenseElement.appendChild(bookmarkIcon);
 
